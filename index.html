@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>CasualClicks</title>
-	<link rel="icon" type="image" href="images/5.jpg">
+	<link rel="icon" type="image" href="images/5.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -30,57 +30,69 @@
 			<div class="portfolio-items-wrapper">
 
 				<div class="portfolio-item-wrapper">
+					<a href="himachal.html">
 					 <div class="portfolio-img-background" style="background-image:url(images/9.jpeg)"></div>
 
 					 <div class="img-text-wrapper">
 	
 					 	<div class="subtitle">Himachal Pradesh, 2019.</div>
 					 </div>
+					</a>
 				</div>
 
 				<div class="portfolio-item-wrapper">
+					<a href="automotive.html">
 					 <div class="portfolio-img-background" style="background-image:url(images/11.jpeg)"></div>
 
 					 <div class="img-text-wrapper">
 	
 					 	<div class="subtitle">Automotive</div>
 					 </div>
+					</a>
 				</div>
 
 				<div class="portfolio-item-wrapper">
+					 <a href="vnit.html">
 					 <div class="portfolio-img-background" style="background-image:url(images/12.jpeg)"></div>
 
 					 <div class="img-text-wrapper">
 	
 					 	<div class="subtitle">Visvesvaraya National Institute of Technology.</div>
 					 </div>
+					 </a>
 				</div>
 
 				<div class="portfolio-item-wrapper">
+					 <a href="vaastu-pooja.html">
 					 <div class="portfolio-img-background" style="background-image:url(images/10.jpeg)"></div>
 
 					 <div class="img-text-wrapper">
 	
 					 	<div class="subtitle">Vaastu Pooja, 2020.</div>
 					 </div>
+					 </a>
 				</div>
 
 				<div class="portfolio-item-wrapper">
+					 <a href="jhilpi.html">
 					 <div class="portfolio-img-background" style="background-image:url(images/7.jpeg)"></div>
 
 					 <div class="img-text-wrapper">
 	
 					 	<div class="subtitle">Jhilpi Lake, 2020.</div>
 					 </div>
+					 </a>
 				</div>
 
 				<div class="portfolio-item-wrapper">
+					 <a href="karhandla.html">
 					 <div class="portfolio-img-background" style="background-image:url(images/8.jpeg)"></div>
 
 					 <div class="img-text-wrapper">
 	
 					 	<div class="subtitle">Karhandla, 2020.</div>
 					 </div>
+					 </a>
 				</div>
 			</div>
 		</div>
@@ -109,12 +121,13 @@
 
 	portfolioItems.forEach(portfolioItem =>{
 		portfolioItem.addEventListener('mouseover', () =>{
-			portfolioItem.childNodes[1].classList.add('img-darken');
+			portfolioItem.childNodes[1].childNodes[1].classList.add('img-darken');
 		})
 
 		portfolioItem.addEventListener('mouseout', () =>{
-			portfolioItem.childNodes[1].classList.remove('img-darken');
+			portfolioItem.childNodes[1].childNodes[1].classList.remove('img-darken');
 		})
 	})
+	
 </script>
 </html>
